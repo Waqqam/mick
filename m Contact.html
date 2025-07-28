@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Section</title>
-            <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gully Gully Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     * {
       box-sizing: border-box;
@@ -12,154 +13,89 @@
       padding: 0;
       font-family: Arial, sans-serif;
     }
-
     body {
-      background: #fff;
-      padding: 50px;
-    }
-
-    .contact-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .left-column,
-    .right-column {
-      flex: 1 1 45%;
-    }
-
-    .promo-circle {
-      background: #ffff88;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 36px;
-      font-weight: bold;
-      margin: 0 auto 30px;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .promo-circle span {
-      font-size: 16px;
-      font-weight: normal;
-      margin-top: 5px;
-    }
-
-    .left-column h2 {
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .left-column button {
-      display: block;
-      margin: 0 auto;
-      padding: 10px 20px;
-      border: 2px solid #ffff88;
-      background: transparent;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .left-column button:hover {
-      background: #ffff88;
-      color: #000;
-    }
-
-    .contact-item {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .contact-item .icon {
-      background: #ffff88;
-      border-radius: 50%;
-      padding: 20px;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto 15px;
-    }
-
-    .contact-item .icon img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .contact-item h3 {
-      font-size: 18px;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    .contact-item p {
-      font-size: 14px;
-      color: #333;
+      background-color: antiquewhite;
     }
   </style>
-                       <!-- Navbar -->
+</head>
+
+<body>
+
+  <!-- Navbar -->
   <nav class="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-sm px-10 py-4 flex justify-between items-center border-b border-white/10">
     <div class="text-2xl font-bold tracking-wide">GULLY GULLY</div>
     <ul class="flex space-x-6 text-sm font-medium">
       <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
       <li><a href="menu.html" class="hover:text-gray-300">Menu</a></li>
-      <li><a href="#" class="hover:text-gray-300">About Us</a></li>
-      <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+      <li><a href="#m About us page.html" class="hover:text-gray-300">About Us</a></li>
+      <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
     </ul>
   </nav>
-</head>
-<body style="background-color: antiquewhite;">
 
-  <section class="contact-section">
-    <!-- Left Side -->
-    <div class="left-column">
-      <div class="promo-circle">
-        40%
-        <span>BUSINESS LUNCH</span>
+  <!-- Hero Section -->
+  <section class="text-center py-32 mt-20 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?restaurant,food')">
+    <h1 class="text-4xl font-bold text-white drop-shadow-lg">Welcome to Gully Gully</h1>
+    <p class="text-lg text-white mt-4">Home of the boldest business lunch in town</p>
+    <a href="menu.html" class="inline-block mt-6 bg-yellow-300 text-black px-6 py-2 rounded hover:bg-yellow-400">Check Our Menu</a>
+  </section>
+
+  <!-- Contact Section (Centered Form) -->
+  <section id="contact" class="min-h-screen bg-white flex items-center justify-center px-6 py-16" data-aos="fade-up">
+    <div class="w-full max-w-2xl bg-yellow-50 p-10 rounded-xl shadow-lg">
+      <div class="text-center mb-8">
+        <div class="bg-yellow-300 w-32 h-32 rounded-full flex flex-col justify-center items-center mx-auto text-4xl font-bold">
+          40%
+          <span class="text-base font-normal mt-2">BUSINESS LUNCH</span>
+        </div>
+        <h2 class="text-2xl font-semibold mt-6">Get in Touch</h2>
+        <p class="text-gray-600 mt-2">Fill out the form and we'll get back to you ASAP!</p>
       </div>
-      <h2>Our Contact</h2>
-      <form action="file:///C:/Users/mikae/my%20first%20project%20html/m%20About%20us%20page.html">
-      <button>Read more</button>
+
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded" required>
+        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded" required>
+        <textarea placeholder="Your Message" class="w-full border border-gray-300 p-3 rounded h-32" required></textarea>
+        <button type="submit" class="w-full bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-2 px-6 rounded">Send Message</button>
       </form>
-    </div>
 
-    <!-- Right Side -->
-    <div class="right-column">
-      <div class="contact-item">
-        <div class="icon">
-          <img src="https://img.icons8.com/ios-filled/50/000000/new-message.png" alt="Chat Icon" />
-        </div>
-        <h3>CHAT TO US</h3>
-        <p>Our friendly team is here to help</p>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon">
-          <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location Icon" />
-        </div>
-        <h3>OFFICE</h3>
-        <p>Say hello at ora ora ora street</p>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon">
-          <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon" />
-        </div>
-        <h3>CALL</h3>
-        <p>+123 456 7890</p>
+      <!-- Social Icons -->
+      <div class="flex justify-center space-x-4 mt-6">
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="Instagram" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="Twitter" /></a>
       </div>
     </div>
   </section>
+
+  <!-- Testimonials -->
+  <section class="px-6 py-16 bg-white" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-8">What Our Customers Say</h2>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="bg-yellow-100 p-6 rounded shadow">
+        <p>"Best lunch in town. Fast, fresh, and fire 🔥!"</p>
+        <p class="mt-2 text-sm text-gray-600">- Alex R.</p>
+      </div>
+      <div class="bg-yellow-100 p-6 rounded shadow">
+        <p>"The business lunch deal is unbeatable. Highly recommend."</p>
+        <p class="mt-2 text-sm text-gray-600">- Priya M.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-20 border-t border-gray-300 pt-6 text-center text-sm text-gray-600 bg-white py-4">
+    <p>&copy; 2025 GULLY GULLY. All rights reserved.</p>
+    <div class="flex justify-center mt-2 space-x-4">
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Terms of Service</a>
+    </div>
+  </footer>
+
+  <!-- AOS Scroll Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
